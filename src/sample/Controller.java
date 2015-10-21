@@ -31,7 +31,7 @@ public class Controller implements Initializable {
         listView.setItems(contacts);
     }
 
-    public void addItem() {
+    public void addContact() {
         String name = nameField.getText();
         String phone = phoneField.getText();
         String email = emailField.getText();
@@ -47,7 +47,7 @@ public class Controller implements Initializable {
         }
     }
 
-    public void removeItem() {
+    public void removeContact() {
         Contacts item = (Contacts) listView.getSelectionModel().getSelectedItem();
         if (item != null) {
             contacts.remove(item);
